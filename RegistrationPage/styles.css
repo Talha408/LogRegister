@@ -1,0 +1,479 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.page-container{
+background-color: #FFF7F1;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+
+.form-container{
+display: flex;
+flex-direction: column;
+gap: 50px;
+width: 980px;
+height: 670px;
+align-items: center;
+box-shadow: 10px 10px 10px 10px gray;
+background-color: #FFE4C9;
+border-radius: 3%;
+}
+
+.form-submission{
+display: flex;
+flex-direction: column;
+gap: 55px;
+
+
+}
+
+.columns{
+display: flex;
+gap: 55px;
+
+}
+.column-1{
+display: flex;
+flex-direction: column;
+gap: 40px;
+
+}
+
+.column-2{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+    }
+
+.heading{
+text-align: center; 
+font-size: 18px;   
+}
+
+
+
+.field{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 260px;
+height: 47px;
+gap: 20px;
+border: 1px solid black;
+}
+
+.field input{
+border: none; 
+outline: none;  
+background-color: #FFE4C9; 
+}
+.field img{
+ height: 17px;
+ width: 17px;
+}
+
+
+.labell{
+display: flex;
+gap: 20px;
+}
+
+.sp{
+border-bottom: 1px solid black;
+
+}
+
+.submit{
+display: flex;
+flex-direction: column;
+gap: 18px;
+}
+
+.submitButton{
+background-color: #E78895;
+color: #FFF7F1;
+padding: 17px;
+width: 180px;
+border: none;
+border-radius: 7%;
+cursor: pointer;
+transition: .2s linear;
+}
+.submitButton:hover{
+    background-color: #FFF7F1;
+    color: #E78895;
+    
+    }
+#cbtn{
+cursor: pointer;
+
+}
+
+
+.error-message{
+color: black;
+font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .page-container{
+        align-items: flex-start;
+        height: 950px;
+     gap: 0px;
+       
+    
+        }
+        
+        
+        .form-container {
+            width: 100%;
+            height: 100%;
+            box-shadow: none;
+     
+            background-color: transparent;
+        }
+    
+        .form-submission {
+         align-items: center;
+        gap: 35px;
+        }
+    
+        .columns {
+            flex-direction: column;
+            gap: 27px;
+        }
+    
+        .column-1, .column-2 {
+            
+        gap: 27px;
+        }
+    
+        .field {
+        background-color: transparent;
+        height: 40px;
+        width: 300px;
+        justify-content: flex-start; 
+        padding: 20px;    
+    }
+
+    
+        .field input {
+        background-color: transparent;
+    font-size: 11px;
+   
+    }
+    
+        .heading {
+            font-size: 14px;
+        }
+    
+        .labell {
+            flex-direction: row;
+            width: 100%;
+            gap: 20px;
+           font-size: 13px;
+        }
+    
+        .submit {
+        gap: 20px;
+        align-items: center;
+        }
+    
+        .submitButton {
+         width: 150px;
+         height: 45px;
+             
+        }
+    
+        .error-message {
+            font-size: 13px;
+        }
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    .page-container{
+        align-items: flex-start;
+     
+       
+    
+    
+        }
+        
+        
+        .form-container {
+            width: 85%;
+            height: 100%;
+           box-shadow: none;
+     
+          border-radius: 0px;           
+        }
+    
+        .form-submission {
+        align-items: center;
+        
+
+        gap: 45px;
+        }
+    
+        .columns {
+            flex-direction: column;
+            gap: 30px;
+        }
+    
+        .column-1, .column-2 {
+            
+        gap: 30px;
+        }
+    
+        .field {
+        background-color: transparent;
+        }
+    
+        .field input {
+        background-color: transparent;
+        }
+    
+        .heading {
+            font-size: 16px;
+        }
+    
+        .labell {
+            flex-direction: row;
+            
+            gap: 20px;
+           
+        }
+    
+        .submit {
+        gap: 30px;
+        
+        }
+    
+        .submitButton {
+            width: 100%;
+             
+        }
+    
+        .error-message {
+            font-size: 13px;
+        }
+
+
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .page-container{
+        align-items: flex-start;
+       height: 1400px;
+       justify-content: center;
+    
+    
+        }
+
+        .page-container .heading{
+        font-size: 20px;     
+          
+        }
+        
+        
+        .form-container {
+            
+           box-shadow: none;
+           background-color: #FFF7F1;
+          border-radius: 0px;           
+        }
+    
+        .form-submission {
+        align-items: center;
+        
+
+        gap: 65px;
+        }
+    
+        .columns {
+            flex-direction: column;
+            gap: 40px;
+        }
+    
+        .column-1, .column-2 {
+            
+        gap: 40px;
+        }
+    
+        .field {
+        background-color: #FFF7F1;
+        width: 580px;
+        
+        justify-content: flex-start;
+        padding: 28px;
+    }
+    
+        .field input {
+        background-color: transparent;
+        font-size: 20px;
+    }
+    
+     
+    
+        .labell {
+            flex-direction: row;
+            width: 500px;
+            font-size: 22px;
+            gap: 20px;
+           
+        }
+    
+        .submit {
+        gap: 30px;
+        
+        }
+    
+        .submitButton {
+            width: 550px;
+            height: 60px; 
+            font-size: 15px;
+        }
+    
+        .error-message {
+            font-size: 13px;
+        }
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    .page-container{
+        align-items: center;
+        height: 100vh;
+           
+        
+        
+            }
+    
+            .heading{
+            font-size: 23px;
+    
+            }
+            
+            
+            .form-container {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                min-width: 1020px;
+                height: 700px;
+                align-items: center;
+                box-shadow: 10px 10px 10px 10px gray;
+                background-color: #FFE4C9;
+                border-radius: 3%;        
+            }
+        
+            .form-submission {
+                display: flex;
+                flex-direction: column;
+                gap: 55px;
+    
+            
+            }
+        
+            .columns {
+                flex-direction: row;
+                gap: 25px;
+            }
+        
+            .column-1, .column-2 {
+                
+            gap: 25px;
+            }
+        
+            .field {
+            background-color: transparent;
+            width: 300px;
+          height: 47px;
+            gap: 20px;
+            
+           
+           
+        }
+        
+            .field input {
+            background-color: transparent;
+            font-size: 16px;
+        }
+        
+            .heading {
+                font-size: 16px;
+            }
+        
+            .labell {
+                flex-direction: row;
+                width: 500px;
+                font-size: 18px;
+                gap: 20px;
+               
+            }
+        
+            .submit {
+            gap: 30px;
+            width: 100%;
+            }
+        
+            .submitButton {
+                width: 100%;
+                 
+            }
+        
+            .error-message {
+                font-size: 13px;
+            }
+    
+    
+    
+    }
+
+
+
+
+    @media only screen and (min-width: 1200px)
+
+
+{
+
+.form-container{
+width: 980px;
+
+
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
